@@ -12,6 +12,7 @@
   <body>
     <header class="row">
       <div class="col-3">
+        <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
           KEEP
@@ -21,11 +22,12 @@
           PRAYING
         </div>
       </div>
+      <% end %>
       <div class="col-4 slogan">
       The most insperational verses to keep you going
     </div>
     <div class="col-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Contribute', new_verse_path %>
       <%= link_to 'About', '#' %>
     </header>
 
@@ -40,10 +42,10 @@
   <div class="footer">
     <div class="row">
       <div class="col-6">
-        <%= link_to "This isn't enough, I need more", "#", class: 'next-verse' %>
+        <%= link_to "This isn't enough, I need more", root_path, class: 'next-verse' %>
       </div>
         <div class="col-6 footer-blurp">
-          Project created by <a href="craigwhite-webdev.com">Craig White</a><br />
+          Project created by <a href="https://craigwhite-webdev.com">Craig White</a><br />
           Need more Jesus? - <a href="https://bible.com/app">Download the you version bible app!</a>
         </div>
     </div>

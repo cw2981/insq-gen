@@ -1,0 +1,8 @@
+<h1>Enter Your Insperational Verse</h1>
+<%= simple_form_for @verse do |f| %>
+	<%= f.input :saying %>
+	<%= f.input :book %>
+	<%= f.input :chapter %>
+	<br />
+	<%= f.submit 'Create', class: 'btn btn-danger' %>
+<% end %>
