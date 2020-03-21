@@ -33,7 +33,22 @@
 
     <br class="clear" />
 
+    <div class="container">
     <%= yield %>
+  </div>
+
+  <div class="footer">
+    <div class="row">
+      <div class="col-6">
+        <%= link_to "This isn't enough, I need more", "#", class: 'next-verse' %>
+      </div>
+        <div class="col-6 footer-blurp">
+          Project created by <a href="craigwhite-webdev.com">Craig White</a><br />
+          Need more Jesus? - <a href="https://bible.com/app">Download the you version bible app!</a>
+        </div>
+    </div>
+  </div>
+</div>
   
   </body>
 </html>

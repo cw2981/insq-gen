@@ -39,11 +39,25 @@
 	color: black;
 	font-size: 25px;
 	border-bottom: 1px solid #dfdfdf;
+	font-weight: bold;
 }
+
 header {
 	border-top: 9px solid #222222;
 }
 
 hr {
 	clear: both;
+}
+
+h1 {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 600;
+	letter-spacing: -1.5px;
+}
+
+h2 {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 600;
+	letter-spacing: -1.5px;
 }
