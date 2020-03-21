@@ -15,6 +15,9 @@ class VersesController < ApplicationController
 		redirect_to root_path
 	end
 
+	def about
+	end
+
 	private
 
 	def verse_params
