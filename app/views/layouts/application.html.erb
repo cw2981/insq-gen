@@ -23,12 +23,13 @@
         </div>
       </div>
       <% end %>
-      <div class="col-4 slogan">
+      <div class="col col-sm-4 hidden-xs-down slogan ">
       The most insperational verses to keep you going
     </div>
-    <div class="col-5 links text-center">
+    <div class="col-10 offset-1 offset-sm-0 col-sm-5 links text-center">
       <!-- Button trigger modal -->
       <%= link_to 'Add Your Insperational Verse', '#', data: {toggle: 'modal', target: '#myModal'} %>
+      &nbsp;&nbsp;
       <%= link_to 'About', about_path %>
     </div>
   </header>
@@ -46,9 +47,11 @@
           </div>
           <%= simple_form_for Verse.new do |f| %>
             <div class="modal-body">
-              <%= f.input :saying %>
-              <%= f.input :book %>
-              <%= f.input :chapter %>
+              <%= f.input :saying, label: "\"What is your Favorite Insperational Bible Verse?\"", placeholder: "\"Faith does not make things easy. it makes them possible.\"" %>
+              <br />
+              <%= f.input :book, label: "which book of the bible?", placeholder: "\"Luke\"" %>
+              <br />
+              <%= f.input :chapter, label: "What chapter is the verse located?", placeholder: "1:37"  %>
             </div>
             
           </div>
@@ -75,10 +78,10 @@
 
   <div class="footer">
     <div class="row">
-      <div class="col-6">
+      <div class="col-12 col-sm-6">
         <%= link_to "This isn't enough, I need more", root_path, class: 'next-verse' %>
       </div>
-        <div class="col-6 footer-blurp">
+        <div class="col-12 col-sm-6 footer-blurp">
           Project created by <a href="https://craigwhite-webdev.com">Craig White</a><br />
           Need more Jesus? - <a href="https://bible.com/app">Download the you version bible app!</a>
         </div>
