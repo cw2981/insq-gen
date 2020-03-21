@@ -9,6 +9,9 @@ class VersesController < ApplicationController
 
 	def create
 		Verse.create(verse_params)
+		if @qoute.invalid?
+			flash[:error] = '<strong>Could not save</strong> the data you entered was invalid'
+		end
 		redirect_to root_path
 	end
 
