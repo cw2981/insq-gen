@@ -3,10 +3,6 @@ class VersesController < ApplicationController
 		@verse = Verse.order("RANDOM()").first
 	end
 
-	def new
-		@verse = Verse.new
-	end
-
 	def create
 		Verse.create(verse_params)
 		if @qoute.invalid?
