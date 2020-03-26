@@ -17,6 +17,6 @@ class VersesController < ApplicationController
 	private
 
 	def verse_params
-		params.require(:verse).permit(:saying, :book, :chapter)
+		params.require(:verse).permit(:saying, :book, :chapter, :verse)
 	end
 end
